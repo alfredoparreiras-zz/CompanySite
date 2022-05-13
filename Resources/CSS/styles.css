@@ -11,11 +11,11 @@
     --highlight-color: #eb5e28;
 }
 
-
 html { 
     font-size: 16px;
     font-family: 'Glory', sans-serif;
     background-color:var(--bg-color);
+    box-sizing: border-box;
 }
 
 
@@ -36,6 +36,14 @@ header {
 
 .menu li { 
     padding: 1rem;
+}
+
+.menu li:hover { 
+    padding: 18px;
+    background-color: var(--highlight-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 700;
 }
 
 #logo { 
@@ -78,5 +86,131 @@ header {
 }
 
 .company img { 
-    background-color: var(--bg-color);
+    display: block;
+    position:relative ;
+    float: right;
+    top: -11.5rem;
+}
+
+
+/* Products Section */
+
+.products { 
+    height: 85vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.products div { 
+    width: 33%;
+    height: 65vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    padding: 2rem; 
+    border: 1px solid var(--highlight-color);
+    border-radius: 1rem;
+
+}
+
+.products div:hover{ 
+    background-color: hsla(17, 83%, 54%, 0.3);
+}
+
+.products img { 
+    width: 50%;
+}
+
+#consulting-img {
+    width: 85%;
+}
+
+.product { 
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--highlight-color);
+    padding: 1rem;
+}
+
+.product-descr { 
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 1.05;
+    font-weight: 500;
+    width: 80%;
+}
+
+/* Team Section */
+
+.team { 
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 8rem 2rem;
+
+}
+
+.team div { 
+    min-width: 150px;
+    max-width: 450px;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: -1rem;
+    flex-shrink: 3;
+}
+
+#ceo-photo { 
+    width: 85%;
+}
+.team img { 
+    width: 60%;
+    border-radius: 46%;
+}
+
+.team-name { 
+    font-size: 1.8rem;
+    font-weight: 550 ;
+    margin-top: 2rem;
+    color: var(--highlight-color);
+    text-transform: uppercase;
+}
+
+.team-descr { 
+    margin-top: 1rem;
+    width: 70%;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.team p { 
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    border-bottom: 2px solid var(--highlight-color);
+}
+
+/* Contact Form */
+
+.contact { 
+    height: 25vh;
+    background-color: var(--highlight-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h4 { 
+    font-size: 4rem;
+    color: var(--bg-color);
+    font-weight: 600;
+    text-align: center;
 }
